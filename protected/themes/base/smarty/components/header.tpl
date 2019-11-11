@@ -11,7 +11,7 @@
                     <li><a href="/kontakty">Контакты</a></li>
                     <li><a>О нас</a></li>
                     <li><a>Оформить заказ</a></li>
-                    <li><a>Скачать каталог</a></li>
+                    <li><a><strong>Скачать каталог</strong></a></li>
                 </ul>
             </div>
             <div class="headerMenu-responsive">
@@ -37,7 +37,7 @@
                         <li><a href="/kontakty">Контакты</a></li>
                         <li><a>О нас</a></li>
                         <li><a>Оформить заказ</a></li>
-                        <li><a>Скачать каталог</a></li>
+                        <li><a><strong>Скачать каталог</strong></a></li>
                     </ul>
                 </div>
                 <div class="headerMenu-responsive">

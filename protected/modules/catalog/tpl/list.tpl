@@ -5,8 +5,7 @@
             <div class="sideScroll-inner">
                 <div class="catalog-title">
                     <div class="catalogTitle-title">
-                        {* <a href="/katalog">Каталог</a> *}
-                        <p>Каталог</p>
+                         <a href="/katalog">Каталог</a>
                     </div>
                     <div class="catalogTitle-desc">
                         <p>
@@ -20,10 +19,10 @@
                 {foreach from=$catalog item=product name=proditem}
                 <div class="product-item {if $smarty.foreach.proditem.iteration mod 2 == 0}flex-revers{/if}" id="product{$smarty.foreach.proditem.iteration}">
                     <div class="product-info">
-                        <h2>{$product['title']}</h2>
+                        <h2><a href="/katalog#{$product.anchor}">{$product['title']}</a></h2>
                         <p>{$product['short_desc']}</p>
                     </div>
-                    <div class="product-img">
+                    <a href="/katalog#{$product.anchor}"><div class="product-img">
                         {foreach from=$product['image_file'] item=img}
 
                             <img class="initial" src="{$img.bg.file}" title="{$img.title}" alt="{$img.title}"/>
@@ -35,7 +34,7 @@
                             <img class="hover" src="{$hoverimg.bg.file}"/>
 {*                            <div class="hover bg" style="background-image: url('{$hoverimg.bg.file}')"></div>*}
                         {/foreach}
-                    </div>
+                    </div></a>
                 </div>
                 {/foreach}
             </div>

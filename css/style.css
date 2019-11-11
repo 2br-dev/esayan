@@ -205,6 +205,10 @@ p:first-child {
   margin-bottom: 25px;
   margin-top: 0;
 }
+.catalog-wrapper .sideScroll .sideScroll-inner .product-item h2 a {
+  text-decoration: none;
+  color: inherit;
+}
 .catalog-wrapper .sideScroll .sideScroll-inner .product-item p {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -227,6 +231,10 @@ p:first-child {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
+}
+.catalog-wrapper .sideScroll .sideScroll-inner .catalog-title .catalogTitle-title a {
+  text-decoration: none;
+  color: inherit;
 }
 .catalog-wrapper .sideScroll .sideScroll-inner .catalog-title .catalogTitle-desc {
   font-family: 'Phenomena', sans-serif;
@@ -282,7 +290,7 @@ footer a {
   font-size: 96px;
   line-height: 100px;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 25px;
 }
 .family-traditions .img {
   width: 45%;
@@ -795,6 +803,8 @@ p {
   font-size: 14px;
   line-height: 16px;
   margin-bottom: 25px;
+  text-decoration: none;
+  color: #000;
 }
 .catalog-responsive-prev .catalogTitle-desc {
   font-family: 'Phenomena', sans-serif;

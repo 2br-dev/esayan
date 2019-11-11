@@ -46,6 +46,7 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
+	<meta name="yandex-verification" content="b7ed4ece285445d4" />
 
 	<script src="/js/template7.min.js"></script>
 </head>

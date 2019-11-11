@@ -9,7 +9,7 @@ Disallow: /*?utm_campaign*
 Disallow: /*?utm_content*
 
 Crawl-delay: 3
-Sitemap: https://cms.celebro.ru/sitemap.xml
+Sitemap: https://torti-esayan.ru/sitemap.xml
 
 User-agent: Yandex
 Disallow: /*?
@@ -22,7 +22,7 @@ Disallow: /*?utm_campaign*
 Disallow: /*?utm_content*
 
 Crawl-delay: 3
-Host: https://cms.celebro.ru
+Host: https://torti-esayan.ru
 
 User-agent: msnbot
 Crawl-delay: 10

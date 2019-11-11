@@ -1,10 +1,10 @@
 {foreach $catalog as $index => $category}
 
-        {if $index == 'medoviki'}<p class="categoryItem-title">Медовики</p>{/if}
-        {if $index == 'honeyballs'}<p class="categoryItem-title">Медовые шарики</p>{/if}
-        {if $index == 'honeyslices'}<p class="categoryItem-title">Медовые ломтики</p>{/if}
-        {if $index == 'loppi'}<p class="categoryItem-title">Медовые ломтики "ЛОППИ"</p>{/if}
-        {if $index == 'minicakes'}<p class="categoryItem-title">Пирожные</p>{/if}
+        {if $index == 'medoviki'}<p class="categoryItem-title" id="{$index}"><a name="{$index}"></a>Медовики</p>{/if}
+        {if $index == 'honeyballs'}<p class="categoryItem-title" id="{$index}"><a name="{$index}"></a>Медовые шарики</p>{/if}
+        {if $index == 'honeyslices'}<p class="categoryItem-title" id="{$index}"><a name="{$index}"></a>Медовые ломтики</p>{/if}
+        {if $index == 'loppi'}<p class="categoryItem-title" id="{$index}"><a name="{$index}"></a>Медовые ломтики "ЛОППИ"</p>{/if}
+        {if $index == 'minicakes'}<p class="categoryItem-title" id="{$index}"><a name="{$index}"></a>Пирожные</p>{/if}
 
     {if $index != 'cakes'}
     <div class="categoryItem flex-content">
