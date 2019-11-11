@@ -26,6 +26,7 @@
 	<link type="text/css" rel="stylesheet" href="/css/style.css" />
     <link type="text/css" rel="stylesheet" href="/css/style320.css"/>
     <link type="text/css" rel="stylesheet" href="/css/style1600.css"/>
+    <link type="text/css" rel="stylesheet" href="/css/style1920.css"/>
 
 	<script src="/js/template7.min.js"></script>
 </head>
