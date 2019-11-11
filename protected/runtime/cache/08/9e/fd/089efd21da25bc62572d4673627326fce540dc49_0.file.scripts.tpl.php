@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2019-11-05 22:54:38
+/* Smarty version 3.1.32, created on 2019-11-11 12:46:43
   from 'G:\OpenServer\OSPanel\domains\esayan.local\protected\themes\base\smarty\components\scripts.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5dc1d37eeac5f9_53466188',
+  'unifunc' => 'content_5dc92e034cede7_75054590',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '089efd21da25bc62572d4673627326fce540dc49' => 
     array (
       0 => 'G:\\OpenServer\\OSPanel\\domains\\esayan.local\\protected\\themes\\base\\smarty\\components\\scripts.tpl',
-      1 => 1572980355,
+      1 => 1573134724,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dc1d37eeac5f9_53466188 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dc92e034cede7_75054590 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'G:\\OpenServer\\OSPanel\\domains\\esayan.local\\protected\\app\\libs\\smarty.plugins\\function.compress.php','function'=>'smarty_function_compress',),));
 echo smarty_function_compress(array('attr'=>'data-no-instant','mode'=>'js','source'=>array(array('file'=>'/js/vendor.min.js'),array('file'=>'/js/app.min.js'))),$_smarty_tpl);
 echo '<script'; ?>
@@ -33,8 +33,125 @@ echo '<script'; ?>
 echo '<script'; ?>
  src="/js/horizontal-scroll.js"><?php echo '</script'; ?>
 ><?php }?>
+    <!-- Шаблон для товаров у которых существует поле price1 и отсутствуют поля price2 и price -->
     <?php echo '<script'; ?>
  id="template" type="text/template7">
+        <div class="productItem-close">
+            <a>
+                <i class="material-icons">
+                    close
+                </i>
+            </a>
+        </div>
+        <div class="productItem-image" id="all">
+            {{#each product.image_file}}
+            <img src="{{original.file}}"/>
+            {{/each}}
+        </div>
+        <div class="productItem-desc">
+            <div class="productItem-info">
+                <div class="productItem-title">
+                    <p>{{product.title}}</p>
+                </div>
+                <div class="productItem-text">
+                    <div class="productItem-sostav">
+                        <p><strong>Состав продукта:</strong> {{product.sostav}}</p>
+                    </div>
+                    <div class="productItem-cennost">
+                        <p><strong>Пищевая ценность на 100 г. продукта:</strong> {{product.nutritionals}}</p>
+                    </div>
+                    <div class="productItem-price">
+                        <div class="price-container">
+                            <p class="price">{{product.period}}</p>
+                            <p class="price-comment">Срок хранения</p>
+                        </div>
+                        {{#if product.price1.length}}
+                        <div class="price-container">
+                            <p class="price">{{product.price1}}</p>
+                            <p class="price-comment">{{product.comment_price1}}</p>
+                        </div>
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+            <div class="productItem-ingredients">
+                {{#each product.ico}}
+                <div class="ico-container">
+                    {{#each this.ico_file}}
+                    <img src="{{original.file}}"/>
+                    {{/each}}
+                    <p>{{title}}</p>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    <?php echo '</script'; ?>
+>
+
+    <!-- Шаблон для товаров у которых присутсвуют поля price1 и price2 и отсутствует поле price -->
+    <?php echo '<script'; ?>
+ id="template_1" type="text/template7">
+        <div class="productItem-close">
+            <a>
+                <i class="material-icons">
+                    close
+                </i>
+            </a>
+        </div>
+        <div class="productItem-image" id="all">
+            {{#each product.image_file}}
+            <img src="{{original.file}}"/>
+            {{/each}}
+        </div>
+        <div class="productItem-desc">
+            <div class="productItem-info">
+                <div class="productItem-title">
+                    <p>{{product.title}}</p>
+                </div>
+                <div class="productItem-text">
+                    <div class="productItem-sostav">
+                        <p><strong>Состав продукта:</strong> {{product.sostav}}</p>
+                    </div>
+                    <div class="productItem-cennost">
+                        <p><strong>Пищевая ценность на 100 г. продукта:</strong> {{product.nutritionals}}</p>
+                    </div>
+                    <div class="productItem-price">
+                        <div class="price-container">
+                            <p class="price">{{product.period}}</p>
+                            <p class="price-comment">Срок хранения</p>
+                        </div>
+                        {{#if product.price1.length}}
+                        <div class="price-container">
+                            <p class="price">{{product.price1}}</p>
+                            <p class="price-comment">{{product.comment_price1}}</p>
+                        </div>
+                        {{/if}}
+                        {{#if product.price2.length}}
+                        <div class="price-container">
+                            <p class="price">{{product.price2}}</p>
+                            <p class="price-comment">{{product.comment_price2}}</p>
+                        </div>
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+            <div class="productItem-ingredients">
+                {{#each product.ico}}
+                <div class="ico-container">
+                    {{#each this.ico_file}}
+                    <img src="{{original.file}}"/>
+                    {{/each}}
+                    <p>{{title}}</p>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    <?php echo '</script'; ?>
+>
+
+    <!-- Шаблон для товаров у которых присутствуют поля price1, price2, price -->
+    <?php echo '<script'; ?>
+ id="template_2" type="text/template7">
         <div class="productItem-close">
             <a>
                 <i class="material-icons">
@@ -54,10 +171,10 @@ echo '<script'; ?>
                 </div>
                 <div class="productItem-text">
                     <div class="productItem-sostav">
-                        <p>Состав продукта: {{product.sostav}}</p>
+                        <p><strong>Состав продукта:</strong> {{product.sostav}}</p>
                     </div>
                     <div class="productItem-cennost">
-                        <p>Пищевая ценность на 100 г. продукта: {{product.nutritionals}}</p>
+                        <p><strong>Пищевая ценность на 100 г. продукта:</strong> {{product.nutritionals}}</p>
                     </div>
                     <div class="productItem-price">
                         <div class="price-container">
@@ -103,6 +220,18 @@ echo '<script'; ?>
 
         // Initialize the plugin with no custom options
         $(document).ready(function() {
+            let vh = window.innerHeight * 0.01;
+
+            // Затем устанавливаем значение свойства --vh
+            // для корневого элемента
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+            window.addEventListener('resize', () => {
+                // получаем текущее значение высоты
+                let vh = window.innerHeight * 0.01;
+                document.documentElement.style.setProperty('--vh', `${vh}px`);
+            });
+
+
             $('.catalogList_responsive').slick({
                 dots: true
             });
@@ -124,8 +253,16 @@ echo '<script'; ?>
                         category: category
                     },
                     success: function(res) {
+                        let template = $('#template').html();
+                        if('price2' in res){
+                            template = $('#template_1').html();
 
-                        var template = $('#template').html();
+                        }
+                        if('price' in res){
+                            template = $('#template_2').html();
+                        }
+
+
                         // compile it with Template7
                         var compiledTemplate = Template7.compile(template);
                         // Now we may render our compiled template by passing required context
@@ -135,10 +272,7 @@ echo '<script'; ?>
                         var html = compiledTemplate(context);
                         $('body').css('overflow', 'hidden');
                         $('.productItem').empty().removeAttr('id').attr('id', 'prodBack'+res['background']).append(html).addClass('showProductItem');
-                        // $('.productItem').append(
-                        //     html
-                        // );
-                        // $('.productItem').addClass('showProductItem');
+
                     },
                     error: function(err){},
                     dataType: "JSON"
@@ -148,7 +282,7 @@ echo '<script'; ?>
                 $('.productItem').removeClass('showProductItem');
                 setTimeout(function () {
                     $('body').css('overflow', 'auto');
-                }, 500);
+                }, 300);
 
             });
             $('.headerMenu-responsive').click(function(){

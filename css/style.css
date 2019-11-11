@@ -671,9 +671,8 @@ p {
 }
 .productItem .productItem-desc .productItem-text .productItem-price .price-container .price {
   font-family: 'Phenomena', sans-serif;
-  font-size: 36px;
-  line-height: 65px;
-  font-weight: 700;
+  font-size: 48px;
+  line-height: 100px;
 }
 .productItem .productItem-desc .productItem-text .productItem-price .price-container .price-comment {
   font-family: 'Roboto', sans-serif;
@@ -728,6 +727,7 @@ p {
   padding-bottom: 80px;
   justify-content: space-between;
   max-height: 100vh;
+  margin: 0 auto;
 }
 .contacts-wrapper .contacts {
   width: 37%;

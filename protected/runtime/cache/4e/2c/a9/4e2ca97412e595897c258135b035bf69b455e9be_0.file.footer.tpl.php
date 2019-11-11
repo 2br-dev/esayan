@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2019-11-05 22:54:38
+/* Smarty version 3.1.32, created on 2019-11-11 12:46:43
   from 'G:\OpenServer\OSPanel\domains\esayan.local\protected\themes\base\smarty\components\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5dc1d37ee52be6_56591768',
+  'unifunc' => 'content_5dc92e03452411_22893894',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,6 +20,6 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dc1d37ee52be6_56591768 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dc92e03452411_22893894 (Smarty_Internal_Template $_smarty_tpl) {
 ?><footer><div class="content1100 flex-content"><div class="footer-contacts"><p class="footerItem-title">Контакты</p><p>с. Великовечное, ул. Мира, 87</p><a href="tel:+78615539014">+7 (861) 553-90-14</a></div><div class="footer-cooperation"><p class="footerItem-title">Сотрудничество</p><p>torti.esayan@mail.ru</p></div><div class="footer-social"><p class="footerItem-title">Мы в социальных сетях</p><p>@torti.esayan</p></div><div class="footer-comment"><p class="footerItem-title">Оставить отзыв</p><a href="tel:+79892858148">+7(989) 285-81-48</a><p>torti.esayan@mail.ru</p></div></div></footer><?php }
 }

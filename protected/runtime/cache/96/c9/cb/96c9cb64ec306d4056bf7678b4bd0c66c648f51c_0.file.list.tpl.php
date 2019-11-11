@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2019-11-05 22:54:38
+/* Smarty version 3.1.32, created on 2019-11-11 12:37:49
   from 'G:\OpenServer\OSPanel\domains\esayan.local\protected\modules\catalog\tpl\list.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5dc1d37eb7d544_04665202',
+  'unifunc' => 'content_5dc92bed59cc84_27093246',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '96c9cb64ec306d4056bf7678b4bd0c66c648f51c' => 
     array (
       0 => 'G:\\OpenServer\\OSPanel\\domains\\esayan.local\\protected\\modules\\catalog\\tpl\\list.tpl',
-      1 => 1572957103,
+      1 => 1573134890,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dc1d37eb7d544_04665202 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dc92bed59cc84_27093246 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['catalog']->value) {?>
     <div class="catalog-wrapper">
 
@@ -28,7 +28,7 @@ if ($_smarty_tpl->tpl_vars['catalog']->value) {?>
             <div class="sideScroll-inner">
                 <div class="catalog-title">
                     <div class="catalogTitle-title">
-                        <p>Каталог</p>
+                                                <p>Каталог</p>
                     </div>
                     <div class="catalogTitle-desc">
                         <p>

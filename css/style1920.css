@@ -1,0 +1,43 @@
+@media screen and (min-width: 1921px) {
+  .categoryItem .product {
+    max-width: 440px;
+  }
+  .categoryItem .product .slogan {
+    max-width: 845px;
+  }
+  .categoryItem-title {
+    max-width: 1920px;
+    margin: 0 auto 80px auto;
+  }
+  .contacts-wrapper {
+    min-height: calc(100vh - 280px);
+  }
+  .contacts-wrapper .contacts .contacts-item .contacts-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .contacts-wrapper .contacts .contacts-item .contact-info {
+    font-size: 18px;
+  }
+  .header__menu {
+    font-size: 18px;
+  }
+  .header__text p:nth-child(2) {
+    font-size: 24px;
+    line-height: 38px;
+  }
+  .catalog-wrapper .sideScroll .sideScroll-inner .product-item h2 {
+    font-size: 42px;
+  }
+  .catalog-wrapper .sideScroll .sideScroll-inner .product-item p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .catalog-wrapper .sideScroll .sideScroll-inner .product-item .catalog-title .catalogTitle-title {
+    font-size: 36px;
+  }
+  .content1100 {
+    max-width: 1200px;
+  }
+}
+/*# sourceMappingURL=style1920.css.map */
