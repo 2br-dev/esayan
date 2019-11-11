@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Phenomena';
+    src:
+        local('Phenomena'),
+        local('Phenomena-Regular'),
+        url('/fonts/phenomena/Phenomena.woff2') format('woff2'),
+        url('/fonts/phenomena/Phenomena.woff') format('woff'),
+        url('/fonts/phenomena/Phenomena.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Phenomena';
+    src:
+        local('Phenomena Bold'),
+        local('Phenomena-Bold'),
+        url('/fonts/phenomena/Phenomenabold.woff2') format('woff2'),
+        url('/fonts/phenomena/Phenomenabold.woff') format('woff'),
+        url('/fonts/phenomena/Phenomenabold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
