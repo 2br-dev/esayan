@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2019-11-11 14:06:37
+/* Smarty version 3.1.32, created on 2019-11-14 15:22:15
   from 'G:\OpenServer\OSPanel\domains\esayan.local\protected\themes\base\smarty\components\meta.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5dc940bd4003b7_81670386',
+  'unifunc' => 'content_5dcd46f7253ff9_44072881',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd389dac3decc091fe0b153d3fb8d4a25e73426b0' => 
     array (
       0 => 'G:\\OpenServer\\OSPanel\\domains\\esayan.local\\protected\\themes\\base\\smarty\\components\\meta.tpl',
-      1 => 1573467958,
+      1 => 1573471106,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dc940bd4003b7_81670386 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcd46f7253ff9_44072881 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html class="no-js" itemscope="itemscope" itemtype="http://schema.org/<?php if (!isset($_smarty_tpl->tpl_vars['uri']->value[1])) {?>WebPage<?php } else { ?>ItemPage<?php }?>" lang="<?php echo $_smarty_tpl->tpl_vars['_page']->value['lang'];?>
 "><head><title itemprop="name"><?php echo $_smarty_tpl->tpl_vars['_meta']->value['title'];?>
@@ -30,7 +30,7 @@ function content_5dc940bd4003b7_81670386 (Smarty_Internal_Template $_smarty_tpl)
 " name="description" itemprop="description"><?php if (isset($_smarty_tpl->tpl_vars['pagination']->value['prev']) && $_smarty_tpl->tpl_vars['pagination']->value['prev'] !== '') {?><link rel="prev" href="?page=<?php echo $_smarty_tpl->tpl_vars['pagination']->value['prev'];?>
 "><?php }
 if (isset($_smarty_tpl->tpl_vars['pagination']->value['next']) && $_smarty_tpl->tpl_vars['pagination']->value['next'] !== '') {?><link rel="next" href="?page=<?php echo $_smarty_tpl->tpl_vars['pagination']->value['next'];?>
-"><?php }?><link rel="home" href="/"><!-- Fonts --><link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!-- CSS --><link type="text/css" rel="stylesheet" href="/fonts/phenomena/phenomena.css" ><link type="text/css" rel="stylesheet" href="/css/normalize.css" /><link type="text/css" rel="stylesheet" href="/slick/slick.css" /><link type="text/css" rel="stylesheet" href="/css/style.css" /><link type="text/css" rel="stylesheet" href="/css/style320.css"/><link type="text/css" rel="stylesheet" href="/css/style1600.css"/><link type="text/css" rel="stylesheet" href="/css/style1920.css"/><!-- Favicon --><link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="manifest" href="/manifest.json"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/ms-icon-144x144.png"><meta name="theme-color" content="#ffffff"><?php echo '<script'; ?>
+"><?php }?><link rel="home" href="/"><!-- Fonts --><link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!-- CSS --><link type="text/css" rel="stylesheet" href="/fonts/phenomena/phenomena.css" ><link type="text/css" rel="stylesheet" href="/css/normalize.css" /><link type="text/css" rel="stylesheet" href="/slick/slick.css" /><link type="text/css" rel="stylesheet" href="/css/style.css" /><link type="text/css" rel="stylesheet" href="/css/style320.css"/><link type="text/css" rel="stylesheet" href="/css/style1600.css"/><link type="text/css" rel="stylesheet" href="/css/style1920.css"/><!-- Favicon --><link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="manifest" href="/manifest.json"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/ms-icon-144x144.png"><meta name="theme-color" content="#ffffff"><meta name="yandex-verification" content="b7ed4ece285445d4" /><?php echo '<script'; ?>
  src="/js/template7.min.js"><?php echo '</script'; ?>
 ></head><body class="page-<?php echo $_smarty_tpl->tpl_vars['_page']->value['system'];?>
 ">

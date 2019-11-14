@@ -12,9 +12,9 @@
         {foreach from=$category item=product name=prod}
             <div class="product {if $smarty.foreach.prod.iteration mod 2 == 0}big-padding-top{/if}" data-id="{$product['id']}" data-category="{$index}">
                 {if $index == 'cakes'}<p class="categoryItem-title" style="padding-left: 0;">Торты</p>{/if}
-                <div class="product-image">
+                <div class="product-image back{$product.preview_bg}">
                     {foreach $product['preview_file'] as $preview}
-                        <img src="{$preview.original.file}">
+                        <img src="{$preview.original.file}" class="rellax" data-rellax-speed="2" data-rellax-percentage="0.5">
                     {/foreach}
                 </div>
                 <div class="product-title">

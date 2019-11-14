@@ -335,6 +335,26 @@ footer {
 		margin-bottom: 25px;
 		& .product-image {
 			cursor: pointer;
+			position: relative;
+			overflow: hidden;
+			font-size: 0;
+			&.back1 {
+				background-color: #EDE3D7;
+			}
+			&.back2 {
+				background-color: #F7E4DE;
+			}
+			&.back3 {
+				background-color: #EBEEF5;
+			}
+			& img {
+
+				-webkit-transition: all 0.3s ease-out;
+				-moz-transition: all 0.3s ease-out;
+				-ms-transition: all 0.3s ease-out;
+				-o-transition: all 0.3s ease-out;
+				transition: all 0.3s ease-out;
+			}
 		}
 		& .product-title {
 			cursor: pointer;

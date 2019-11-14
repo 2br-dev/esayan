@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2019-11-11 14:06:37
+/* Smarty version 3.1.32, created on 2019-11-14 15:22:15
   from 'G:\OpenServer\OSPanel\domains\esayan.local\protected\themes\base\smarty\components\scripts.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5dc940bd62de65_72410092',
+  'unifunc' => 'content_5dcd46f73f5b90_69466737',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '089efd21da25bc62572d4673627326fce540dc49' => 
     array (
       0 => 'G:\\OpenServer\\OSPanel\\domains\\esayan.local\\protected\\themes\\base\\smarty\\components\\scripts.tpl',
-      1 => 1573134724,
+      1 => 1573733585,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,17 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dc940bd62de65_72410092 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcd46f73f5b90_69466737 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'G:\\OpenServer\\OSPanel\\domains\\esayan.local\\protected\\app\\libs\\smarty.plugins\\function.compress.php','function'=>'smarty_function_compress',),));
 echo smarty_function_compress(array('attr'=>'data-no-instant','mode'=>'js','source'=>array(array('file'=>'/js/vendor.min.js'),array('file'=>'/js/app.min.js'))),$_smarty_tpl);
 echo '<script'; ?>
  type="text/javascript" src="/js/jquery.min.js"><?php echo '</script'; ?>
 ><?php echo '<script'; ?>
  type="text/javascript" src="/js/main.js"><?php echo '</script'; ?>
+><?php echo '<script'; ?>
+ type="text/javascript" src="/js/rellax.js"><?php echo '</script'; ?>
+><?php echo '<script'; ?>
+>$(document).ready(function(){setTimeout(function(){let rellax = new Rellax('.rellax', {center: true,vertical: true,horizontal: false,callback: function(position) {console.log(position);}});}, 1000)})<?php echo '</script'; ?>
 ><?php echo '<script'; ?>
  src="/slick/slick.min.js"><?php echo '</script'; ?>
 ><?php if ($_smarty_tpl->tpl_vars['uri']->value[0] == '') {

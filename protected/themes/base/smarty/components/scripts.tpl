@@ -9,6 +9,23 @@
 }
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <script type="text/javascript" src="/js/main.js"></script>
+  <script type="text/javascript" src="/js/rellax.js"></script>
+    <script>
+        $(document).ready(function(){
+            setTimeout(function(){
+                let rellax = new Rellax('.rellax', {
+                    center: true,
+                    vertical: true,
+                    horizontal: false,
+                    callback: function(position) {
+
+                        console.log(position);
+                    }
+                });
+            }, 1000)
+
+        })
+    </script>
   <script src="/slick/slick.min.js"></script>
     {if $uri[0] == ''}
         <script src="/js/horizontal-scroll.js"></script>

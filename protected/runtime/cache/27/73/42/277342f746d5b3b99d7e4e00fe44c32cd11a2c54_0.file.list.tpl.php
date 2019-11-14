@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2019-11-11 14:06:37
+/* Smarty version 3.1.32, created on 2019-11-14 15:22:15
   from 'G:\OpenServer\OSPanel\domains\esayan.local\protected\modules\mainCatalog\tpl\list.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5dc940bd17bc22_96367765',
+  'unifunc' => 'content_5dcd46f7055718_20594691',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '277342f746d5b3b99d7e4e00fe44c32cd11a2c54' => 
     array (
       0 => 'G:\\OpenServer\\OSPanel\\domains\\esayan.local\\protected\\modules\\mainCatalog\\tpl\\list.tpl',
-      1 => 1573469970,
+      1 => 1573734133,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dc940bd17bc22_96367765 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dcd46f7055718_20594691 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['catalog']->value, 'category', false, 'index');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['index']->value => $_smarty_tpl->tpl_vars['category']->value) {
@@ -57,14 +57,15 @@ $_smarty_tpl->tpl_vars['__smarty_foreach_prod']->value['iteration']++;
 " data-category="<?php echo $_smarty_tpl->tpl_vars['index']->value;?>
 ">
                 <?php if ($_smarty_tpl->tpl_vars['index']->value == 'cakes') {?><p class="categoryItem-title" style="padding-left: 0;">Торты</p><?php }?>
-                <div class="product-image">
+                <div class="product-image back<?php echo $_smarty_tpl->tpl_vars['product']->value['preview_bg'];?>
+">
                     <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['product']->value['preview_file'], 'preview');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['preview']->value) {
 ?>
                         <img src="<?php echo $_smarty_tpl->tpl_vars['preview']->value['original']['file'];?>
-">
+" class="rellax" data-rellax-speed="2" data-rellax-percentage="0.5">
                     <?php
 }
 }

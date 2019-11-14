@@ -315,6 +315,25 @@ footer a {
 }
 .categoryItem .product .product-image {
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  font-size: 0;
+}
+.categoryItem .product .product-image.back1 {
+  background-color: #EDE3D7;
+}
+.categoryItem .product .product-image.back2 {
+  background-color: #F7E4DE;
+}
+.categoryItem .product .product-image.back3 {
+  background-color: #EBEEF5;
+}
+.categoryItem .product .product-image img {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 .categoryItem .product .product-title {
   cursor: pointer;
