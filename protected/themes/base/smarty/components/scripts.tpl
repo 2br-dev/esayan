@@ -25,7 +25,6 @@
                     });
                 }, 1000)
             }
-
         })
     </script>
   <script src="/slick/slick.min.js"></script>
@@ -287,48 +286,6 @@
                 $('.headerMenu-responsive-content').removeClass('show');
                 $('body').css('overflow', 'auto');
             });
-
-
-            // $(window).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function(event) {
-            //     delta = parseInt(event.originalEvent.wheelDelta || -event.originalEvent.detail);
-            //     if (delta >= 0) {
-            //         console.log('delta', delta)
-            //         $(window).scroll(function() {
-            //             let scrollTop = $(window).scrollTop();
-            //             console.log('scrollTopUp', scrollTop);
-            //             if (scrollTop <= block && offsetx != 0) {
-            //                 $(window).scrollTop(block);
-            //                 //offsetx = offsetx - 9;
-            //                 //console.log('offsetUp', offsetx);
-            //                 $('.sideScroll-inner').css('transform', 'translate3d(-' + offsetx + 'vw, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)')
-            //             }
-            //             else if(scrollTop <= block && offsetx == 0){
-            //                 $('.sideScroll-inner').css('transform', 'translate3d(-' + offsetx + 'vw, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)')
-            //             }
-            //         });
-            //         if(offsetx != 0 && offsetx > 0){
-            //             offsetx = offsetx - 9;
-            //             //console.log('offsetUp', offsetx);
-            //         }
-            //
-            //     } else {
-            //         console.log('delta', delta)
-            //         if(offsetx < 99){
-            //             offsetx = offsetx + 9;
-            //             //console.log('offsetDown', offsetx);
-            //         }
-            //
-            //         $(window).scroll(function (e) {
-            //             let scrollDown = $(window).scrollTop();
-            //             console.log('scrollDown', scrollDown);
-            //             if (scrollTop >= block && offsetx < 99) {
-            //                 $(window).scrollTop(block);
-            //
-            //                 $('.sideScroll-inner').css('transform', 'translate3d(-' + offsetx + 'vw, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)')
-            //             }
-            //         });
-            //     }
-            // });
         });
 
     </script>
