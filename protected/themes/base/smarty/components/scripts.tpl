@@ -12,17 +12,19 @@
   <script type="text/javascript" src="/js/rellax.js"></script>
     <script>
         $(document).ready(function(){
-            setTimeout(function(){
-                let rellax = new Rellax('.rellax', {
-                    center: true,
-                    vertical: true,
-                    horizontal: false,
-                    callback: function(position) {
+            if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
+                setTimeout(function () {
+                    let rellax = new Rellax('.rellax', {
+                        center: true,
+                        vertical: true,
+                        horizontal: false,
+                        callback: function (position) {
 
-                        console.log(position);
-                    }
-                });
-            }, 1000)
+                            console.log(position);
+                        }
+                    });
+                }, 1000)
+            }
 
         })
     </script>
